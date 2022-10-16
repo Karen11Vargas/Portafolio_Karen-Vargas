@@ -16,7 +16,6 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
 //El establecimiento de las rutas basicas que tiene un proyecto
-// El / va definir el nombre de la ruta
 
 app.get('/', (req, res) => {
  // res.send('Pagina Principal')
@@ -27,28 +26,19 @@ app.get('/', (req, res) => {
 
 //Se envian dos paramentros titulo y descripcion
 app.get('/educacion', (req, res) => {
-  res.render('educacion',{
-    titulo: "Sección Educación",
-    descripcion:"Aqui encontraras mi formación académica"
-  })
+  res.render('educacion')
   
 })
 
-app.get('/competencias', (req, res) => {
-  res.send('Pagina de Competencias  ')
+app.get('/carrera', (req, res) => {
+  res.send('')
 })
-
-app.get('/trabajo', (req, res) => {
-  res.send('Pagina Experiencia laboral ')
-})
-
 
 app.get('/pasatiempos', (req, res) => {
-  res.send('Pagina de Pasatiempos  ')
+  res.send('')
 })
 
 //Establecer la ruta al error
-//next permite configurar que funcion trabajar
 //Cada vez que se presente un 404 lo va redirigir al archivo creado 404.html
 app.use((req, res, next) =>{
       res.status(404).sendFile(__dirname + '/public/404.html')
