@@ -51,6 +51,31 @@ body {
         background: #eee; }
         .top-bar a {
           color: #666666; }
+
+
+          /*FOTO PRINCIPAL*/
+.hero {
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.imagen_hero h1 {
+
+  font-size: 400%;
+  text-align: center;
+  padding: 90px;
+  color: #725e5e;
+}
+
+.color:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 6%;
+
+}
+
+
+
       
           /*BARRA DE NAVEGACION */
       .site-navbar {
@@ -518,6 +543,10 @@ body {
     .icon-computador:before {
       content: "\1f4bb";
     }
-    .icon-libro:before {
-      content: "\1f4da";
+    .icon-trofeo:before {
+      content: "\1f3c6";
+      
+    }
+    .icon-trofeo{
+      size: 50px;
     }

@@ -569,6 +569,12 @@ a:hover {
   margin-left: 35px;
 }
 
+.informacion1{
+  font-family: informacion;
+  color: #252525;
+}
+
+
 .foto {
   float: right;
   width: 200px;
@@ -596,6 +602,7 @@ a:hover {
   border-right: thick solid rgb(209, 190, 190);
 
 }
+
 
 .formulario_titulo{
   font-family: FuenteParrafo;
@@ -791,9 +798,11 @@ form textarea {
 .icon-flor:before {
   content: "\1f33c";
 }
-
 .icon-dado:before {
   content: "\1f3b2";
+}
+.icon-educacion:before {
+  content: "\1f393";
 }
 
 .icon-tel:before {
@@ -804,6 +813,3 @@ form textarea {
   content: "\1f4bb";
 }
 
-.icon-libro:before {
-  content: "\1f4da";
-}
