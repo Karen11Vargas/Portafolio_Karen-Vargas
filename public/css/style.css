@@ -603,6 +603,12 @@ a:hover {
 
 }
 
+hr {
+  height: 2px;
+  width: 60%;
+  
+  background-color: rgb(209, 190, 190);
+}
 
 .formulario_titulo{
   font-family: FuenteParrafo;
