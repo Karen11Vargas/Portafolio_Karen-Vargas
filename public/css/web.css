@@ -1,14 +1,20 @@
-.titulo {
-  font-family: FuenteParrafo;
-  text-align: left;
-  color: #000000;
-  font-size: 60px;
-  margin-left: 25PX;
+/* ----- TITULOS Y PARRAFOS */
 
+
+.titulo1 {
+  font-family: FuenteParrafo;
+  color: #000000;
+  font-size: 50px;
+  position: left;
+  margin-left: 20px;
 }
 
-.titulo:hover {
-  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+.titulo2 {
+  font-family: FuenteParrafo;
+  color: #000000;
+  font-size: 50px;
+  text-align: right;
+  margin-right: 30px;
 }
 
 .informacion {
@@ -19,11 +25,12 @@
   margin-left: 35px;
 }
 
-.informacion1{
+.informacion1 {
   font-family: informacion;
   color: #252525;
 }
 
+/* ------ ESTILOS SECCION PORTAFOLIO  ------ */
 .portfolio-item .portfolio-btn {
   position: absolute;
   width: 0;
@@ -33,6 +40,7 @@
   border-radius: 4px;
   opacity: 0;
   transition: .5s;
+
 }
 
 .portfolio-item:hover .portfolio-btn {
@@ -41,116 +49,133 @@
   height: calc(100% - 60px);
   top: 30px;
   left: 30px;
+  background-color: #BCA3AC;
 }
 
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background: #dddddd;
+.portfolio {
+  margin-right: 8px;
 }
 
 
- /* Styling the border and box
-        effect of the progress bar*/
-        .progress-bar {
-          display: flex;
-          height: 1rem;
-          overflow: hidden;
-          line-height: 0;
-          font-size: 0.75rem;
-          background-color: #e9ecef;
-          border-radius: 0.25rem;
 
-          
-      }
-
-      /* Stylingthe background color of each
-  animation and border radius */
-      .percentage1 {
-          display: block;
-          height: 100%;
-          background-color: rgb(139, 116, 73);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
-
-      .percentage2 {
-          display: block;
-          height: 100%;
-          background-color: rgb(30, 87, 97);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
-
-      .percentage3 {
-          display: block;
-          height: 100%;
-          background-color: rgb(113, 37, 136);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
-
-      .percentage4 {
-          display: block;
-          height: 100%;
-          background-color: rgb(90, 189, 45);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
-
-      .percentage5 {
-          display: block;
-          height: 100%;
-          background-color: rgb(212, 81, 92);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
-
-      .percentage6 {
-          display: block;
-          height: 100%;
-          background-color: rgb(27, 68, 156);
-          border-radius: 5px;
-          animation: progress 1500ms ease-in 1;
-      }
+/* -------- ESTILOS HABILIDADES-------*/
+.progress-bar {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
 
 
-      /* Assigning width of each languages*/
-      .html {
-          width: 95%;
-      }
+}
 
-      .css {
-          width: 70%;
-      }
+.percentage1 {
+  display: block;
+  height: 100%;
+  background-color: #AAC9CE;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
 
-      .php {
-          width: 20%;
-      }
+.percentage2 {
+  display: block;
+  height: 100%;
+  background-color: #B6B4C2;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
 
-      .javascript {
-          width: 15%;
-      }
+.percentage3 {
+  display: block;
+  height: 100%;
+  background-color: #C9BBC8;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
 
-      .java {
-          width: 55%;
-      }
+.percentage4 {
+  display: block;
+  height: 100%;
+  background-color: #E5C1CD;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
 
-      .sql {
-          width: 65%;
-      }
+.percentage5 {
+  display: block;
+  height: 100%;
+  background-color: #F3DBCF;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage6 {
+  display: block;
+  height: 100%;
+  background-color: #BCA3AC;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage7 {
+  display: block;
+  height: 100%;
+  background-color: #A5A58D;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage8 {
+  display: block;
+  height: 100%;
+  background-color: #CB997E;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.html {
+  width: 95%;
+}
+
+.css {
+  width: 70%;
+}
+
+.php {
+  width: 20%;
+}
+
+.javascript {
+  width: 15%;
+}
+
+.java {
+  width: 55%;
+}
+
+.sql {
+  width: 65%;
+}
+
+.git {
+  width: 80%;
+}
 
 
-      @keyframes progress {
-          from {
-              width: 0;
-          }
-      }
+.node {
+  width: 20%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+
+.skills {
+  margin-left: 8px;
+}
