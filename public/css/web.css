@@ -3,7 +3,7 @@
 
 .titulo1 {
   font-family: FuenteParrafo;
-  color: #000000;
+  color: #725e5e ;
   font-size: 50px;
   position: left;
   margin-left: 20px;
@@ -11,12 +11,11 @@
 
 .titulo2 {
   font-family: FuenteParrafo;
-  color: #000000;
+  color: #725e5e;
   font-size: 50px;
   text-align: right;
   margin-right: 30px;
 }
-
 .informacion {
   font-family: informacion;
   color: #000000;
@@ -29,6 +28,16 @@
   font-family: informacion;
   color: #252525;
 }
+
+.titulo1:hover{
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.titulo2:hover{
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+.palabra 
+{ font-weight: bold; }
 
 /* ------ ESTILOS SECCION PORTAFOLIO  ------ */
 .portfolio-item .portfolio-btn {
@@ -74,7 +83,7 @@
 .percentage1 {
   display: block;
   height: 100%;
-  background-color: #AAC9CE;
+  background-color: #fa7e2c;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -82,7 +91,7 @@
 .percentage2 {
   display: block;
   height: 100%;
-  background-color: #B6B4C2;
+  background-color: #1968fc;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -90,7 +99,7 @@
 .percentage3 {
   display: block;
   height: 100%;
-  background-color: #C9BBC8;
+  background-color: #806fa1;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -98,7 +107,7 @@
 .percentage4 {
   display: block;
   height: 100%;
-  background-color: #E5C1CD;
+  background-color: #ebee24;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -106,7 +115,7 @@
 .percentage5 {
   display: block;
   height: 100%;
-  background-color: #F3DBCF;
+  background-color: #4ec6eb;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -114,7 +123,7 @@
 .percentage6 {
   display: block;
   height: 100%;
-  background-color: #BCA3AC;
+  background-color: #e04b81;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -122,7 +131,7 @@
 .percentage7 {
   display: block;
   height: 100%;
-  background-color: #A5A58D;
+  background-color: #eeb333;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -130,7 +139,7 @@
 .percentage8 {
   display: block;
   height: 100%;
-  background-color: #CB997E;
+  background-color: #29aa24;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
