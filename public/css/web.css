@@ -1,0 +1,156 @@
+.titulo {
+  font-family: FuenteParrafo;
+  text-align: left;
+  color: #000000;
+  font-size: 60px;
+  margin-left: 25PX;
+
+}
+
+.titulo:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.informacion {
+  font-family: informacion;
+  color: #000000;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 35px;
+}
+
+.informacion1{
+  font-family: informacion;
+  color: #252525;
+}
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+
+ /* Styling the border and box
+        effect of the progress bar*/
+        .progress-bar {
+          display: flex;
+          height: 1rem;
+          overflow: hidden;
+          line-height: 0;
+          font-size: 0.75rem;
+          background-color: #e9ecef;
+          border-radius: 0.25rem;
+
+          
+      }
+
+      /* Stylingthe background color of each
+  animation and border radius */
+      .percentage1 {
+          display: block;
+          height: 100%;
+          background-color: rgb(139, 116, 73);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+      .percentage2 {
+          display: block;
+          height: 100%;
+          background-color: rgb(30, 87, 97);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+      .percentage3 {
+          display: block;
+          height: 100%;
+          background-color: rgb(113, 37, 136);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+      .percentage4 {
+          display: block;
+          height: 100%;
+          background-color: rgb(90, 189, 45);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+      .percentage5 {
+          display: block;
+          height: 100%;
+          background-color: rgb(212, 81, 92);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+      .percentage6 {
+          display: block;
+          height: 100%;
+          background-color: rgb(27, 68, 156);
+          border-radius: 5px;
+          animation: progress 1500ms ease-in 1;
+      }
+
+
+      /* Assigning width of each languages*/
+      .html {
+          width: 95%;
+      }
+
+      .css {
+          width: 70%;
+      }
+
+      .php {
+          width: 20%;
+      }
+
+      .javascript {
+          width: 15%;
+      }
+
+      .java {
+          width: 55%;
+      }
+
+      .sql {
+          width: 65%;
+      }
+
+
+      @keyframes progress {
+          from {
+              width: 0;
+          }
+      }

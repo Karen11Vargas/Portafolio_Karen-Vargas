@@ -84,10 +84,6 @@ a:hover {
   color: #725e5e;
 }
 
-.color:hover {
-  text-decoration: underline wavy rgb(209, 190, 190) 6%;
-
-}
 
 
 .top-bar {
@@ -579,7 +575,7 @@ a:hover {
   float: right;
   width: 200px;
   height: 230px;
-  border-radius: 150px;
+  border-radius: 100px;
   margin-right: -3.5%;
   padding-right: 11px;
 }

@@ -24,18 +24,12 @@ app.get('/', (req, res) => {
 })
 
 
-//Se envian dos paramentros titulo y descripcion
-app.get('/educacion', (req, res) => {
-  res.render('educacion')
-  
-})
-
 app.get('/carrera', (req, res) => {
-  res.send('')
+  res.render('carrera')
 })
 
 app.get('/pasatiempos', (req, res) => {
-  res.send('')
+  res.render('pasatiempos')
 })
 
 //Establecer la ruta al error
