@@ -1,9 +1,13 @@
+
+
 <!--Template Header-->
 <%- include('templates/header'); %>
-
+  <!--///////////////    LOADING ///////////////-->
+  <div id="contenedor_carga">
+    <div id="carga"></div>
+  </div>
   <body>
-
-
+   
     <!--////////////IMAGEN PRINCIPAL////////////////////-->
     <div class="hero" style="background-image: url('./../static/images/nubes.jpg');">
       <div class="imagen_hero">
@@ -20,15 +24,15 @@
       <div class="col-10 ">
         <p class="informacion "><img class="foto" src="./../static/images/perfill.jpg"><br><br>
           Hola!, soy Karen Vargas una adolescente de 16 años,
-          que le encanta estudiar y aprender cosas nuevas, 
-          soy una persona tranquila que le gusta leer (AMO la literatura) 
+          que le encanta estudiar y aprender cosas nuevas,
+          soy una persona tranquila que le gusta leer (AMO la literatura)
           y la programación, me gusta hacer actividad física,
           ya sea montar cicla, la natación o solamente saltar laso.
         </p>
         <p class="informacion"><img class="foto" src="./../static/images/perrfil.jpg">
           Entre otros gustos también esta: escuchar música, pasar tiempo <br>
-          con mi familia y mis amigos, salir, conocer lugares, viajar, en fin... 
-          En general soy una chica muy activa que le gusta lo que está estudiando <br>y 
+          con mi familia y mis amigos, salir, conocer lugares, viajar, en fin...
+          En general soy una chica muy activa que le gusta lo que está estudiando <br>y
           trata cada dia de ser mejor.
         </p>
       </div>
@@ -103,8 +107,23 @@
     </div>
     <br><br>
 
+    <!--///////   LOADING     //////////-->
+
+    <script>
+      window.onload=function(){
+        var contenedor = document.getElementById('contenedor_carga');
+  
+        contenedor.style.visibility='hidden';
+        contenedor.style.opacity='0';
+      }
+    </script>
+   
+
     <!--Template Footer-->
     <%- include('templates/footer'); %>
+
+    <!--///////   LOADING     //////////-->
+
   </body>
 
   </html>
