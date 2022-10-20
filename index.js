@@ -2,6 +2,8 @@ const express = require('express')
 const app = express() //Se guarda todo el metodo donde se guarda todas las funicones de express
 const port = 3000
 
+
+
 //Se puede acceder a los archivo sin importar la ruta donde esten 
 const path = require('path') 
 app.use('/static', express.static(path.join(__dirname, 'public')))
