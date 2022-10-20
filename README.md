@@ -1,7 +1,9 @@
 <h1 align="center"> Portadolio Personal con Node.js</h1>
 <h4 align="center">Portafolio personal desarrollado con Node.js</h4>
 
-<p align="center"><img src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png"/></p> 
+<p align="center"><img src="imagenes inicio/inicio.png"/></p> 
+<p align="center"><img src="imagenes inicio/inicio2.png"/></p> 
+
 
 ## Construido con 🛠️
 
