@@ -1,63 +1,63 @@
 .titulo {
-    font-family: FuenteParrafo;
-    text-align: center;
-    color: #725e5e;
-    font-size: 60px;
-
-    
-  }
-  
-  .titulo:hover {
-    text-decoration: underline wavy rgb(209, 190, 190) 7%;
-  }
-  
-  .informacion {
-    font-family: informacion;
-    color: #000000;
-    font-size: 22px;
-    margin-left: 20px;
-  }
-
-  .icon-libros:before {
-    content: "\1f4da";
-  }
-
-  hr {
-    height: 2px;
-    width: 90%;
-    
-    background-color: rgb(209, 190, 190);
-  }
+  font-family: FuenteParrafo;
+  text-align: center;
+  color: #725e5e;
+  font-size: 60px;
 
 
-  
+}
+
+.titulo:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.informacion {
+  font-family: informacion;
+  color: #000000;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.icon-libros:before {
+  content: "\1f4da";
+}
+
+hr {
+  height: 2px;
+  width: 90%;
+
+  background-color: rgb(209, 190, 190);
+}
+
+
+
 .informacion1 {
-    font-family: informacion;
-    color: #252525;
-  }
+  font-family: informacion;
+  color: #252525;
+}
 
-  .learn-more-btn { 
-    background:rgb(209, 190, 190) ; 
-    color: #fff;
-     padding: 5px 10px;
-     border-radius: 5px;
-     color: #fff; 
-     display: inline-block; 
+.learn-more-btn {
+  background: rgb(209, 190, 190);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
 
-  
-    font-family:informacion;
-    }
-  
-    .learn-more-btn:hover{
-       background: rgb(224, 209, 209) ;
-        color: #fff; }
-  
 
-        .fotoo{
-            width: 200px;
-            height: 250px;
-            float: right;
-            border-radius: 20px;
-            margin-left: 40px;
-          }
-          
+  font-family: informacion;
+}
+
+.learn-more-btn:hover {
+  background: rgb(224, 209, 209);
+  color: #fff;
+}
+
+
+.fotoo {
+  width: 200px;
+  height: 250px;
+  float: right;
+  border-radius: 20px;
+  margin-left: 40px;
+}
