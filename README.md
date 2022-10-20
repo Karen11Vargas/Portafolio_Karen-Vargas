@@ -1,4 +1,4 @@
-<h1 align="center"> Portadolio Personal con Node.js</h1>
+<h1 align="center"> Portafolio Personal con Node.js</h1>
 <h4 align="center">Portafolio personal desarrollado con Node.js</h4>
 
 <p align="center"><img src="imagenes inicio/inicio.png"/></p> 
