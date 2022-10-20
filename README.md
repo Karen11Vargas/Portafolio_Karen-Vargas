@@ -1,5 +1,5 @@
 <h1 align="center"> Portadolio Personal con Node.js</h1>
-<h5 align="center">Portafolio personal desarrollado con Node.js</h5>
+<h4 align="center">Portafolio personal desarrollado con Node.js</h4>
 
 <p align="center"><img src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png"/></p> 
 
