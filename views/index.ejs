@@ -22,16 +22,17 @@
         <h2 class="titulo "><b>Sobre mi</h2></b>
       </div>
       <div class="col-10 ">
-        <p class="informacion "><img class="foto" src="./../static/images/perfill.jpg"><br><br>
+        <p class="informacion "><img class="foto" src="./../static/images/img1.jpg"><br><br>
           Hola!, soy Karen Vargas una adolescente de 16 años,
-          que le encanta estudiar y aprender cosas nuevas,
-          soy una persona tranquila que le gusta leer (AMO la literatura)
-          y la programación, me gusta hacer actividad física,
-          ya sea montar cicla, la natación o solamente saltar laso.
+          que le encanta estudiar y aprender cosas nuevas, tengo diferentes gustos como 
+          la programación y la lectura, actualmente estoy estudiando programacion 
+          y aparte haciendo diferentes cursos para reforzar y aprender mas sobre los 
+          diferentes lenguajes de programacion.
         </p>
-        <p class="informacion"><img class="foto" src="./../static/images/perrfil.jpg">
+        <br>
+        <p class="informacion"><img class="foto" src="./../static/images/img3.jpg">
           Entre otros gustos también esta: escuchar música, pasar tiempo <br>
-          con mi familia y mis amigos, salir, conocer lugares, viajar, en fin...
+          con mi familia y mis amigos, viajar, en fin...
           En general soy una chica muy activa que le gusta lo que está estudiando <br>y
           trata cada dia de ser mejor.
         </p>
@@ -53,12 +54,12 @@
               <div class="position-relative mb-4">
                 <h5 class="font-weight-bold mb-1 informacion1"> <span class="icon-educacion"></span>Tecnólogo Análisis y
                   Desarrollo de Sistemas de Información</h5>
-                <p class="informacion1"><strong>Sena</strong> | <small>feb 2022- presente</small></p>
+                <p class="informacion1"><small>feb 2022- presente</small></p>
               </div>
               <div class="position-relative mb-4">
                 <h5 class="font-weight-bold mb-1  informacion1"><span class="icon-educacion"></span>Técnico en
                   programación de Software</h5>
-                <p class="informacion1"><strong>Sena</strong> | <small>2020- 2021</small></p>
+                <p class="informacion1"><small>2020- 2021</small></p>
               </div>
 
             </div>
@@ -69,13 +70,13 @@
                 <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                 <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Bachiller Técnico
                   Industrial</h5>
-                <p class="informacion1"><strong>Instituto Técnico Industrial Piloto</strong> | <small>2021</small></p>
+                <p class="informacion1"><small>2021</small></p>
               </div>
               <div class="position-relative mb-4">
                 <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Fundamentos en
-                  Programación</h5>
-                <p class="informacion1"><strong>Mintic</strong> | <small>2021 (64 horas)</small></p>
+                <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Cursos Afines</h5>
+                <p class="informacion1"><a href="https://drive.google.com/drive/folders/1NZTBaMAIY1jS_ClMuAbPcMXbutsyOfZo?usp=sharing" style="text-decoration:none  ; color: #070707;
+                   font-size: 15px;" target="black">Ver Certificados</a></p>
               </div>
             </div>
           </div>
@@ -96,11 +97,11 @@
       </div>
       <img class="foto_form" src="./../static/images/contacto2.png">
       <div class="col-8">
-        <form action="https://formspree.io/f/mdobqgnb" method="POST">
+        <form action="https://formspree.io/f/mdobqgnb" method="POST" id="myForm">
           <label class="form_titulo"><b>Correo Electrónico</b> </label>
-          <input type="email" name="email" placeholder="Escribe tu correo" required><br>
+          <input type="email" name="email" id="correo" placeholder="Escribe tu correo" ><br>
           <label class="form_titulo"><b>Mensaje</b></label><br>
-          <textarea name="message" placeholder="Deja tu mensaje aquí" required></textarea><br>
+          <textarea name="message" id="mensaje" placeholder="Deja tu mensaje aquí" ></textarea><br>
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -121,6 +122,7 @@
 
     <!--Template Footer-->
     <%- include('templates/footer'); %>
+    
 
     <!--///////   LOADING     //////////-->
 
