@@ -1,3 +1,33 @@
+function validarCorreo() {
+	let correo = document.getElementById('correo');
+	let mensaje = document.getElementById('mensaje');
+  
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	let validation = emailRegex.test(correo.value);
+  
+	// Validacion
+	
+	if (correo.value === "" && mensaje.value === "") {
+	  Swal.fire({
+		icon: 'information',
+		title: 'Oops...',
+		text: 'Campos Vacíos',
+	  })
+	  return false;
+	}else if (!validation) {
+			Swal.fire({
+			  icon: 'error',
+			  title: 'Oops...',
+			  text: 'Correo Inválido',
+			})
+			return false;
+	} else {
+	  hola();
+	  return true;
+	}
+}
+  
+
 $(function() {
 
   var siteSticky = function() {
@@ -86,4 +116,6 @@ $(function() {
 
 	    
 });
+
+
 

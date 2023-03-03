@@ -97,16 +97,17 @@
       </div>
       <img class="foto_form" src="./../static/images/contacto2.png">
       <div class="col-8">
-        <form action="https://formspree.io/f/mdobqgnb" method="POST" id="myForm">
+        <form >
           <label class="form_titulo"><b>Correo Electrónico</b> </label>
           <input type="email" name="email" id="correo" placeholder="Escribe tu correo" ><br>
           <label class="form_titulo"><b>Mensaje</b></label><br>
           <textarea name="message" id="mensaje" placeholder="Deja tu mensaje aquí" ></textarea><br>
-          <button type="submit">Enviar</button>
+          <button type="" onclick="return validarCorreo()">Enviar</button>
         </form>
       </div>
     </div>
     <br><br>
+
 
     <!--///////   LOADING     //////////-->
 
