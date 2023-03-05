@@ -9,7 +9,7 @@ function validarCorreo() {
 	
 	if (correo.value === "" && mensaje.value === "") {
 	  Swal.fire({
-		icon: 'information',
+		icon: 'info',
 		title: 'Oops...',
 		text: 'Campos Vacíos',
 	  })

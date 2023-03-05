@@ -146,7 +146,7 @@
 .percentage5 {
   display: block;
   height: 100%;
-  background-color: #4ec6eb;
+  background-color: #793cce;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -154,7 +154,7 @@
 .percentage6 {
   display: block;
   height: 100%;
-  background-color: #e04b81;
+  background-color: #4ec6eb;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -162,7 +162,7 @@
 .percentage7 {
   display: block;
   height: 100%;
-  background-color: #eeb333;
+  background-color: #e04b81;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
@@ -170,42 +170,66 @@
 .percentage8 {
   display: block;
   height: 100%;
+  background-color: #eeb333;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage9 {
+  display: block;
+  height: 100%;
   background-color: #29aa24;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage10 {
+  display: block;
+  height: 100%;
+  background-color: #71d230;
   border-radius: 5px;
   animation: progress 1500ms ease-in 1;
 }
 
 /* Assigning width of each languages*/
 .html {
-  width: 95%;
+  width: 75%;
 }
 
 .css {
-  width: 70%;
+  width: 60%;
 }
 
 .php {
-  width: 20%;
+  width: 30%;
 }
 
 .javascript {
-  width: 15%;
+  width: 40%;
+}
+
+.boostrap {
+  width: 60%;
 }
 
 .java {
-  width: 55%;
+  width: 50%;
 }
 
 .sql {
-  width: 65%;
+  width: 55%;
 }
 
 .git {
-  width: 80%;
+  width: 70%;
 }
 
 
 .node {
+  width: 25%;
+}
+
+.mongo {
   width: 20%;
 }
 
