@@ -22,7 +22,10 @@ function validarCorreo() {
 			})
 			return false;
 	} else {
-	  hola();
+		Swal.fire({
+			icon: 'success',
+			title: 'Correo Enviado'
+		  })
 	  return true;
 	}
 }

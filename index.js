@@ -1,8 +1,17 @@
+const { json } = require('express');
 const express = require('express')
+
 const app = express() //Se guarda todo el metodo donde se guarda todas las funicones de express
 const port = 3000
 
+//Pra poder entender los datos que llegan del formulario
+app.use(express.urlencoded({extended:false}));
 
+//Utilizar tipo json
+app.use(express.json());
+
+//Acceder al archivo de la carpeta routes
+app.use(require('./routes/index'));
 
 //Se puede acceder a los archivo sin importar la ruta donde esten 
 const path = require('path') 
@@ -29,6 +38,7 @@ app.get('/carrera', (req, res) => {
 app.get('/pasatiempos', (req, res) => {
   res.render('pasatiempos')
 })
+
 
 
 //Establecer la ruta al error
