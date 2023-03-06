@@ -853,3 +853,21 @@ form textarea {
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
 }
+
+/*----Alertas----*/
+.swal2-title {
+  font-family:informacion ;
+  font-size: 40px !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.swal2-html-container{
+  font-family: informacion;
+  font-size: 20px !important;
+  color: #725e5e !important;
+}
+
+.swal2-confirm {
+  font-family: informacion;
+  background-color: rgb(209, 190, 190) !important;
+}
