@@ -10,7 +10,15 @@ body {
   background-color: rgb(255, 255, 255);
   height: 200vh;
   position: relative;
+  transition: .3s ease all;
 }
+
+body.dark {
+  background-color: #232529;
+}
+
+
+
 
 body:before {
   content: "";
@@ -40,6 +48,9 @@ p {
   font-weight: 300;
 }
 
+body.dark p{
+  color: #e2e3e7;
+}
 h1,
 h2,
 h3,
@@ -69,23 +80,37 @@ a:hover {
   text-decoration: none !important;
 }
 
-/*FOTO PRINCIPAL*/
+/*FOTO PRINCIPAL INDEX*/
+.heroIndex[data-theme="light"] {
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../images/nubes.jpg')
+
+}
+body.dark .heroIndex[data-theme="light"]  {
+  background-image: url('../images/cielo.jpg')
+}
+
+/*FOTO PRINCIPAL OTRAS PAGINAS*/
 .hero {
   height: 40vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .imagen_hero h1 {
-
   font-size: 400%;
   text-align: center;
   padding: 90px;
   color: #725e5e;
 }
 
+body.dark .imagen_hero h1{
+  color: #fff;
 
+}
 
 .top-bar {
   padding: .10rem 0;
@@ -96,6 +121,8 @@ a:hover {
   color: #666666;
 }
 
+
+
 /*BARRA DE NAVEGACION */
 .site-navbar {
   margin-bottom: 0px;
@@ -104,6 +131,8 @@ a:hover {
   width: 100%;
   padding: 1rem;
 }
+
+
 
 @media (max-width: 991.98px) {
   .site-navbar {
@@ -126,6 +155,11 @@ a:hover {
   margin: 0;
   padding: 0;
   z-index: 6;
+}
+
+body.dark .site-logo img{
+  content: url('../images/logodark.png')
+
 }
 
 @media (max-width: 991.98px) {
@@ -165,8 +199,14 @@ a:hover {
   text-decoration: none !important;
 }
 
+body.dark .site-navbar .site-navigation .site-menu>li>a {
+  color: #e2e3e7 !important;
+
+}
+
+
 .site-navbar .site-navigation .site-menu>li>a:hover {
-  color: #e5dcc2;
+  color: #e5dcc2 ;
 }
 
 .site-navbar .site-navigation .site-menu .has-children {
@@ -413,6 +453,8 @@ a:hover {
   color: #ffffff;
 }
 
+
+
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
   right: 0px;
@@ -505,9 +547,6 @@ a:hover {
   transition: .3s all ease;
 }
 
-.sticky-wrapper .site-navbar {
-  background: #fff;
-}
 
 .sticky-wrapper .site-navbar .site-logo a {
   color: #fff;
@@ -525,6 +564,13 @@ a:hover {
   background: #fff;
   -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .sticky-wrapper.is-sticky .site-navbar {
+  background: #292c31;
+  -webkit-box-shadow: 4px 0 20px -5px #696e79;
+  box-shadow: 4px 0 20px -5px #696e79
+
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
@@ -554,9 +600,16 @@ a:hover {
 
 }
 
+body.dark .titulo{
+  color: #e2e3e7;
+
+}
+
+
 .titulo:hover {
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
+
 
 .informacion {
   font-family: informacion;
@@ -566,12 +619,23 @@ a:hover {
   margin-left: 35px;
 }
 
+body.dark .informacion {
+  color: #e2e3e7;
+
+}
+
 .informacion1{
   font-family: informacion;
   color: #252525;
   font-size: 20px;
 
 }
+body.dark .informacion1 {
+  color: #e2e3e7;
+
+}
+
+
 
 
 .foto {
@@ -595,12 +659,20 @@ a:hover {
   border-left: thick solid rgb(209, 190, 190);
 }
 
+body.dark .verticalLine {
+  border-left: thick solid #696e79
+}
+
 /*-----CONTACTO ---------*/
 
 .verticalLine1{
   border-right: thick solid rgb(209, 190, 190);
-
 }
+
+body.dark .verticalLine1 {
+  border-right: thick solid #696e79
+}
+
 
 hr {
   height: 2px;
@@ -608,6 +680,12 @@ hr {
   
   background-color: rgb(209, 190, 190);
 }
+
+body.dark hr {
+  background-color: #696e79; /* Color de fondo más oscuro para los campos */
+
+}
+
 
 .formulario_titulo{
   font-family: FuenteParrafo;
@@ -618,9 +696,17 @@ hr {
   
 }
 
+body.dark .formulario_titulo {
+  color: #e2e3e7;
+
+}
+
+
 .formulario_titulo:hover{
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
+
+
 
 /*---FORMUALRIO-----*/
 
@@ -632,6 +718,10 @@ form{
   font-size: 30px;
 }
 
+body.dark .form_titulo {
+  color: #e2e3e7;
+
+}
 
 .foto_form{
   width: 370px;
@@ -649,7 +739,26 @@ form input, form textarea{
   font-size: 1em;
 }
 
+body.dark form input {
+  margin-bottom: 10px;
+  width: 515px;
+  font-family: informacion;
+  padding: 10px;
+  background-color: #292c31; /* Color de fondo más oscuro para los campos */
+  color: #fff;
+  font-size: 1em;
 
+}
+
+body.dark form textarea {
+  margin-bottom: 10px;
+  width: 515px;
+  font-family: informacion;
+  padding: 10px;
+  background-color: #292c31; /* Color de fondo más oscuro para los campos */
+  color: #fff;
+  font-size: 1em;
+}
 
 form button {
 	display: block;
@@ -659,6 +768,17 @@ form button {
 	font-size: em; 
 	color: 	white;
   font-family: informacion;
+}
+
+body.dark form button {
+  background-color: #898282; /* Color de fondo claro para el botón de enviar */
+  color: #222; /* Color de texto oscuro para el botón de enviar */
+  display: block;
+  padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: em; 
+  font-family: informacion;
+
 }
 form button:hover{
 	background-color:rgb(180, 177, 177);
@@ -677,6 +797,11 @@ form textarea {
   margin: auto;
   background: #ececec;
   padding: 20px 0px;
+
+}
+
+body.dark .w3hubs-footer{
+  background: #292c31;
 
 }
 
@@ -702,12 +827,19 @@ form textarea {
   background: #ffffff;
 }
 
+body.dark .w3hubs-icon ul li  {
+  background: #505050;
+
+}
+
+
 .w3hubs-icon ul li a {
   text-decoration: none;
   color: #d3cccc;
   font-size: 25px;
   display: block;
 }
+
 
 .w3hubs-icon ul li a i {
   line-height: 50px;
@@ -755,9 +887,15 @@ form textarea {
   letter-spacing: 1px;
 }
 
+body.dark .w3hubs-nav ul li a {
+  color: #ece4e4;
+
+}
 .w3hubs-nav ul li a:hover {
   color: #d3cccc;
 }
+
+
 .w3hubs-nav ul li {
   margin: 5px 20px;
 }
@@ -858,16 +996,81 @@ form textarea {
 .swal2-title {
   font-family:informacion ;
   font-size: 40px !important;
-  color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) ;
+}
+
+body.dark .swal2-title{
+  color: #fff;
+}
+
+body.dark .swal2-popup{
+  background-color: #292c31;
+
 }
 
 .swal2-html-container{
   font-family: informacion;
   font-size: 20px !important;
-  color: #725e5e !important;
+  color: #725e5e ;
+}
+
+body.dark .swal2-html-container{
+  color: #b4b6b9;
+
 }
 
 .swal2-confirm {
   font-family: informacion;
-  background-color: rgb(209, 190, 190) !important;
+  background-color: rgb(209, 190, 190) ;
+}
+
+
+body.dark .swal2-confirm{
+  background-color: #898282;
+
+}
+
+/*----LIGHT/DARK-----*/
+
+.switch{
+	background: #b9bdc3;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius:100px ;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active{
+  background: #a2a5ab;
+  color: #aeaeae;
+}
+
+.switch.active::after{
+  right: 0;
+  left: unset;
+}
+.template{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	background: none;
+	columns: #fff;
 }
