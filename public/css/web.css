@@ -9,6 +9,12 @@
   margin-left: 20px;
 }
 
+
+body.dark .titulo1{
+  color: #eeeeee;
+
+}
+
 .titulo2 {
   font-family: FuenteParrafo;
   color: #725e5e;
@@ -16,6 +22,11 @@
   text-align: center;
   margin-right: 30px;
 }
+
+body.dark .titulo2{
+  color: #eeeeee;
+}
+
 .informacion {
   font-family: informacion;
   color: #000000;
@@ -77,26 +88,29 @@
   margin-right: 10px;
 
   font-family:informacion;
-  }
+}
 
-  .learn-more-btn:hover{
-     background: rgb(224, 209, 209) ;
-      color: #fff; }
+.learn-more-btn:hover{
+  background: rgb(224, 209, 209) ;
+  color: #fff; 
+}
 
-     @font-face {
-      font-family: portafolio;
-      src: url(../fonts/Cherry\ Monospace-Light.ttf);
-    }
+@font-face {
+  font-family: portafolio;
+  src: url(../fonts/Cherry\ Monospace-Light.ttf);
+}
 
-    .portafolioo{
-      font-family: portafolio;
-      color: #000000;
-      text-align: center;
-      font-weight: bold;
-      font-size: 15px;
-    }
+.portafolioo{
+  font-family: portafolio;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
 
-
+body.dark .portafolioo{
+  color: #000000;
+}
 
 /* -------- ESTILOS HABILIDADES-------*/
 .progress-bar {
@@ -110,7 +124,9 @@
 
 
 }
-
+body.dark .progress-bar{
+  background-color: #292c31;
+}
 .percentage1 {
   display: block;
   height: 100%;

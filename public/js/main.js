@@ -142,4 +142,3 @@ if (localStorage.getItem('dark-mode')=='true') {
 	btnSwitch.classList.remove('active');
 }
 
-

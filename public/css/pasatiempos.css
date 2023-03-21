@@ -18,6 +18,17 @@
   margin-left: 20px;
 }
 
+.titleBooks{
+  font-family: informacion;
+  color: #010101;
+}
+
+body.dark .titleBooks{
+  color: #010101;
+}
+
+
+
 .icon-libros:before {
   content: "\1f4da";
 }
@@ -47,21 +58,10 @@ hr {
   color: #252525;
 }
 
-.learn-more-btn {
-  background: rgb(209, 190, 190);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
 
+body.dark .informacion1{
+  color: #252525;
 
-  font-family: informacion;
-}
-
-.learn-more-btn:hover {
-  background: rgb(224, 209, 209);
-  color: #fff;
 }
 
 
@@ -122,10 +122,13 @@ hr {
   src: url(../fonts/Louis\ George\ Cafe.ttf);
 }
 
-.portafolioo{
+.books{
   font-family: portafolio;
   color: #000000;
   text-align: center;
   font-size: 20px;
 }
 
+body.dark .books{
+  color: #000000;
+}
