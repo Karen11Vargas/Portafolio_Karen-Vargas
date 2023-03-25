@@ -142,3 +142,8 @@ if (localStorage.getItem('dark-mode')=='true') {
 	btnSwitch.classList.remove('active');
 }
 
+//Bloquear Clic derecho
+document.addEventListener('contextmenu', event => {
+	event.preventDefault(); // cancela el evento predeterminado (menú contextual)
+  });
+
