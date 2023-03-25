@@ -24,15 +24,8 @@ app.use((req, res, next) =>{
   res.status(404).sendFile(__dirname + '/public/404.html')
 })
 
-app.use((err, req, res, next) => {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: err
-  });
-});
 
-// Iniciar servidor
+//Lo que hace es escuchar a traves de que puerto se esta ejecutando 
 app.listen(PORT, () => {
-  console.log(`Servidor iniciado en el puerto ${PORT}`);
-});
+  console.log(`Acceda al servidos haciendo click aqui http://localhost:${PORT}`)
+})
