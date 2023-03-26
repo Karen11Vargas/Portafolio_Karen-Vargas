@@ -1,6 +1,10 @@
-/* ----- TITULOS Y PARRAFOS */
+/* ----- FONTS ------*/
+@font-face {
+  font-family: portafolio;
+  src: url(../fonts/Cherry\ Monospace-Light.ttf);
+}
 
-
+/* ----- TITULOS Y PARRAFOS ----*/
 .titulo1 {
   font-family: FuenteParrafo;
   color: #725e5e ;
@@ -9,10 +13,9 @@
   margin-left: 20px;
 }
 
-
+/* Dark */
 body.dark .titulo1{
   color: #eeeeee;
-
 }
 
 .titulo2 {
@@ -23,6 +26,7 @@ body.dark .titulo1{
   margin-right: 30px;
 }
 
+/* Dark */
 body.dark .titulo2{
   color: #eeeeee;
 }
@@ -47,57 +51,8 @@ body.dark .titulo2{
 .titulo2:hover{
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
-.palabra 
-{ font-weight: bold; }
-
-/* ------ ESTILOS SECCION PORTAFOLIO  ------ */
-.portfolio-item .portfolio-btn {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  opacity: 0;
-  transition: .2s;
-
-}
-
-.portfolio-item:hover .portfolio-btn {
-  opacity: 1;
-  width: 100% ;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background-color: #f5eeebea;
-}
-
-.portfolio {
-  margin-right: 8px;
-}
-
-
-.learn-more-btn { 
-  background:rgb(209, 190, 190) ; 
-  color: #fff;
-   padding: 5px 10px;
-   border-radius: 5px;
-   color: #fff; 
-   display: inline-block; 
-  margin-left: 80px;
-  margin-right: 10px;
-
-  font-family:informacion;
-}
-
-.learn-more-btn:hover{
-  background: rgb(224, 209, 209) ;
-  color: #fff; 
-}
-
-@font-face {
-  font-family: portafolio;
-  src: url(../fonts/Cherry\ Monospace-Light.ttf);
+.palabra {
+  font-weight: bold;
 }
 
 .portafolioo{
@@ -108,6 +63,7 @@ body.dark .titulo2{
   font-size: 15px;
 }
 
+/* Dark */
 body.dark .portafolioo{
   color: #000000;
 }
@@ -121,9 +77,9 @@ body.dark .portafolioo{
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
-
-
 }
+
+/* Dark */
 body.dark .progress-bar{
   background-color: #292c31;
 }
@@ -255,10 +211,53 @@ body.dark .progress-bar{
   }
 }
 
-
 .skills {
   margin-left: 8px;
 }
 
+/* ------ ESTILOS SECCION PORTAFOLIO  ------ */
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .2s;
+
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: 100% ;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #f5eeebea;
+}
+
+.portfolio {
+  margin-right: 8px;
+}
+
+
+.learn-more-btn { 
+  background:rgb(209, 190, 190) ; 
+  color: #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: #fff; 
+   display: inline-block; 
+  margin-left: 80px;
+  margin-right: 10px;
+
+  font-family:informacion;
+}
+
+.learn-more-btn:hover{
+  background: rgb(224, 209, 209) ;
+  color: #fff; 
+}
 
     

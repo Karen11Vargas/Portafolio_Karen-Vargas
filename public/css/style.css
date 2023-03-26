@@ -1,10 +1,15 @@
+/*------ FONTS --------- */
 @font-face {
   font-family: FuenteParrafo;
   src: url(../fonts/Please\ write\ me\ a\ song.ttf);
 }
 
+@font-face {
+  font-family: informacion;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
 
-/* BODY */
+/* ------BODY ------*/
 body {
   font-family: FuenteParrafo;
   background-color: rgb(255, 255, 255);
@@ -13,12 +18,10 @@ body {
   transition: .3s ease all;
 }
 
+/* Dark */
 body.dark {
   background-color: #232529;
 }
-
-
-
 
 body:before {
   content: "";
@@ -42,32 +45,65 @@ body.offcanvas-menu:before {
   visibility: visible;
 }
 
+/* --------PARRAFOS, TITULOS ----------- */
 
 p {
   color: #a19a9a;
   font-weight: 300;
 }
 
+/* Dark */
 body.dark p{
   color: #e2e3e7;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   font-family: FuenteParrafo;
+}
+
+.titulo {
+  font-family: FuenteParrafo;
+  text-align: left;
+  color: #725e5e;
+  font-size: 60px;
+  margin-left: 25PX;
+}
+
+/* Dark */
+body.dark .titulo{
+  color: #eeeeee;
+}
+
+.titulo:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.informacion {
+  font-family: informacion;
+  color: #000000;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 35px;
+}
+
+/* Dark */
+body.dark .informacion {
+  color: #e2e3e7;
 
 }
 
-/*LINKS*/
+.informacion1{
+  font-family: informacion;
+  color: #252525;
+  font-size: 20px;
+}
+
+/* Dark */
+body.dark .informacion1 {
+  color: #e2e3e7;
+}
+
+/* ------LINKS ---------*/
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -75,25 +111,58 @@ a {
   font-size: 150%;
 }
 
-a,
-a:hover {
+a,a:hover {
   text-decoration: none !important;
 }
 
-/*FOTO PRINCIPAL INDEX*/
+/* ---------SEPARADORES  -----------*/
+
+.verticalLine {
+  border-left: thick solid rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark .verticalLine {
+  border-left: thick solid #696e79
+}
+
+.verticalLine1{
+  border-right: thick solid rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark .verticalLine1 {
+  border-right: thick solid #696e79
+}
+
+
+hr {
+  height: 2px;
+  width: 75%;
+  background-color: rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark hr {
+  background-color: #696e79; 
+}
+
+
+/*----------FOTO PRINCIPAL INDEX ------------*/
 .heroIndex[data-theme="light"] {
   height: 40vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url('../images/nubes.jpg')
-
 }
+
+/* Dark */
 body.dark .heroIndex[data-theme="light"]  {
   background-image: url('../images/cielo.jpg')
 }
 
-/*FOTO PRINCIPAL OTRAS PAGINAS*/
+/* ----------FOTO PRINCIPAL OTRAS PAGINAS -----------*/
 .hero {
   height: 40vh;
   background-size: cover;
@@ -107,9 +176,9 @@ body.dark .heroIndex[data-theme="light"]  {
   color: #725e5e;
 }
 
+/* Dark */
 body.dark .imagen_hero h1{
   color: #fff;
-
 }
 
 .top-bar {
@@ -122,8 +191,7 @@ body.dark .imagen_hero h1{
 }
 
 
-
-/*BARRA DE NAVEGACION */
+/*--------BARRA DE NAVEGACION----------- */
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
@@ -131,8 +199,6 @@ body.dark .imagen_hero h1{
   width: 100%;
   padding: 1rem;
 }
-
-
 
 @media (max-width: 991.98px) {
   .site-navbar {
@@ -146,6 +212,7 @@ body.dark .imagen_hero h1{
   right: 0px;
 }
 
+/* -------LOGO------- */
 .site-navbar .site-logo {
   position: absolute;
   font-size: 2rem;
@@ -157,6 +224,7 @@ body.dark .imagen_hero h1{
   z-index: 6;
 }
 
+/* Dark */
 body.dark .site-logo img{
   content: url('../images/logodark.png')
 
@@ -199,11 +267,11 @@ body.dark .site-logo img{
   text-decoration: none !important;
 }
 
+/* Dark */
 body.dark .site-navbar .site-navigation .site-menu>li>a {
   color: #eeeeee !important;
 
 }
-
 
 .site-navbar .site-navigation .site-menu>li>a:hover {
   color: #e5dcc2 ;
@@ -345,7 +413,7 @@ body.dark .site-navbar .site-navigation .site-menu>li>a {
 }
 
 
-/*MENU EN PANTALLAS PEQUEÑAS*/
+/*-------------MENU EN PANTALLAS PEQUEÑAS -----------*/
 .site-mobile-menu {
   width: 300px;
   position: fixed;
@@ -364,9 +432,9 @@ body.dark .site-navbar .site-navigation .site-menu>li>a {
   transition: .3s all ease-in-out;
 }
 
+/* Dark */
 body.dark .site-mobile-menu {
   background: #232529;
-
 }
 
 .offcanvas-menu .site-mobile-menu {
@@ -445,9 +513,9 @@ body.dark .site-mobile-menu {
   color: #212529;
 }
 
+/* Dark */
 body.dark .site-mobile-menu .site-nav-wrap a{
   color: #fafafa;
-
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
@@ -462,8 +530,6 @@ body.dark .site-mobile-menu .site-nav-wrap a{
 .site-mobile-menu .site-nav-wrap li .nav-link.active {
   color: #ffffff;
 }
-
-
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -544,7 +610,6 @@ body.dark .site-mobile-menu .site-nav-wrap a{
   padding-left: 60px;
 }
 
-
 .sticky-wrapper {
   position: relative;
   z-index: 100;
@@ -556,7 +621,6 @@ body.dark .site-mobile-menu .site-nav-wrap a{
   -o-transition: .3s all ease;
   transition: .3s all ease;
 }
-
 
 .sticky-wrapper .site-navbar .site-logo a {
   color: #fff;
@@ -576,11 +640,11 @@ body.dark .site-mobile-menu .site-nav-wrap a{
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
 }
 
+/* Dark */
 body.dark .sticky-wrapper.is-sticky .site-navbar {
   background: #292c31;
   -webkit-box-shadow: 4px 0 20px -5px #696e79;
-  box-shadow: 4px 0 20px -5px #696e79
-
+  box-shadow: 4px 0 20px -5px #696e79;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
@@ -595,59 +659,8 @@ body.dark .sticky-wrapper.is-sticky .site-navbar {
   color: #e0d0bb !important;
 }
 
+
 /*------SOBRE MI -----------------*/
-@font-face {
-  font-family: informacion;
-  src: url(../fonts/Louis\ George\ Cafe.ttf);
-}
-
-.titulo {
-  font-family: FuenteParrafo;
-  text-align: left;
-  color: #725e5e;
-  font-size: 60px;
-  margin-left: 25PX;
-
-}
-
-body.dark .titulo{
-  color: #eeeeee;
-
-}
-
-
-.titulo:hover {
-  text-decoration: underline wavy rgb(209, 190, 190) 7%;
-}
-
-
-.informacion {
-  font-family: informacion;
-  color: #000000;
-  text-align: left;
-  font-size: 22px;
-  margin-left: 35px;
-}
-
-body.dark .informacion {
-  color: #e2e3e7;
-
-}
-
-.informacion1{
-  font-family: informacion;
-  color: #252525;
-  font-size: 20px;
-
-}
-body.dark .informacion1 {
-  color: #e2e3e7;
-
-}
-
-
-
-
 .foto {
   float: right;
   width: 200px;
@@ -660,62 +673,27 @@ body.dark .informacion1 {
 .foto:hover {
   background: rgb(209, 190, 190);
   cursor: pointer;
-    transform: scale(1.1);
-
-
+  transform: scale(1.1);
 }
 
-.verticalLine {
-  border-left: thick solid rgb(209, 190, 190);
-}
-
-body.dark .verticalLine {
-  border-left: thick solid #696e79
-}
 
 /*-----CONTACTO ---------*/
-
-.verticalLine1{
-  border-right: thick solid rgb(209, 190, 190);
-}
-
-body.dark .verticalLine1 {
-  border-right: thick solid #696e79
-}
-
-
-hr {
-  height: 2px;
-  width: 75%;
-  
-  background-color: rgb(209, 190, 190);
-}
-
-body.dark hr {
-  background-color: #696e79; /* Color de fondo más oscuro para los campos */
-
-}
-
-
 .formulario_titulo{
   font-family: FuenteParrafo;
   text-align: right;
   color: #725e5e;
   font-size: 60px;
   margin-right: 36px;
-  
 }
 
+/* Dark */
 body.dark .formulario_titulo {
   color: #e2e3e7;
-
 }
-
 
 .formulario_titulo:hover{
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
-
 
 
 /*---FORMUALRIO-----*/
@@ -728,9 +706,9 @@ form{
   font-size: 30px;
 }
 
+/* Dark */
 body.dark .form_titulo {
   color: #eeeeee;
-
 }
 
 .foto_form{
@@ -738,7 +716,7 @@ body.dark .form_titulo {
   height: 370px;
   float: right;
   margin-right: 36px;
- }
+}
 
 form input, form textarea{
   margin-bottom: 10px;
@@ -749,23 +727,24 @@ form input, form textarea{
   font-size: 1em;
 }
 
+/* Dark */
 body.dark form input {
   margin-bottom: 10px;
   width: 515px;
   font-family: informacion;
   padding: 10px;
-  background-color: #292c31; /* Color de fondo más oscuro para los campos */
+  background-color: #292c31; 
   color: #fff;
   font-size: 1em;
-
 }
 
+/* Dark */
 body.dark form textarea {
   margin-bottom: 10px;
   width: 515px;
   font-family: informacion;
   padding: 10px;
-  background-color: #292c31; /* Color de fondo más oscuro para los campos */
+  background-color: #292c31; 
   color: #fff;
   font-size: 1em;
 }
@@ -780,16 +759,17 @@ form button {
   font-family: informacion;
 }
 
+/* Dark */
 body.dark form button {
-  background-color: #898282; /* Color de fondo claro para el botón de enviar */
-  color: #222; /* Color de texto oscuro para el botón de enviar */
+  background-color: #898282; 
+  color: #222; 
   display: block;
   padding: 10px 45px 10px 45px;
 	border: 0;
 	font-size: em; 
   font-family: informacion;
-
 }
+
 form button:hover{
 	background-color:rgb(180, 177, 177);
 }
@@ -798,24 +778,22 @@ form textarea {
    resize:none;
   }
 
-/*FOOTER */
+/*------FOOTER -------*/
 
 .w3hubs-footer {
-  /* color fonfo footer*/
   width: 100%;
   height: auto;
   margin: auto;
   background: #ececec;
   padding: 20px 0px;
-
 }
 
+/* Dark */
 body.dark .w3hubs-footer{
   background: #292c31;
-
 }
 
-/*Iconos redes sociales */
+/* -------ICONOS REDES SOCIALES ----- */
 .w3hubs-icon {
   width: 100%;
   height: auto;
@@ -837,11 +815,10 @@ body.dark .w3hubs-footer{
   background: #ffffff;
 }
 
+/* Dark */
 body.dark .w3hubs-icon ul li  {
   background: #505050;
-
 }
-
 
 .w3hubs-icon ul li a {
   text-decoration: none;
@@ -849,7 +826,6 @@ body.dark .w3hubs-icon ul li  {
   font-size: 25px;
   display: block;
 }
-
 
 .w3hubs-icon ul li a i {
   line-height: 50px;
@@ -863,9 +839,7 @@ body.dark .w3hubs-icon ul li  {
   transform: scale(1.4);
 }
 
-/* texto */
-
-
+/* ------TEXTO FOOTER -------*/
 
 .w3hubs-nav {
   width: 100%;
@@ -897,6 +871,7 @@ body.dark .w3hubs-icon ul li  {
   letter-spacing: 1px;
 }
 
+/* Dark */
 body.dark .w3hubs-nav ul li a {
   color: #ece4e4;
 
@@ -946,25 +921,13 @@ body.dark .w3hubs-nav ul li a {
   }
 }
 
-/*ICONOS */
+/*--------ICONOS --------*/
 
-.icon-flor:before {
-  content: "\1f33c";
-}
-.icon-dado:before {
-  content: "\1f3b2";
-}
 .icon-educacion:before {
   content: "\1f393";
 }
 
-.icon-tel:before {
-  content: "\1f4de";
-}
-
-.icon-computador:before {
-  content: "\1f4bb";
-}
+/*-----------ESTILOS CARGA PAGINA ------- */
 
 #contenedor_carga{
   background-color: rgba(241, 241, 241, 0.9);
@@ -994,7 +957,6 @@ body.dark .w3hubs-nav ul li a {
   -webkit-animation: girar 1.5s linear infinite;
   -o-animation: girar 1.5s linear infinite;
   animation: girar 1.5s linear infinite;
-
 }
 
 @keyframes girar{
@@ -1002,20 +964,21 @@ body.dark .w3hubs-nav ul li a {
   to{transform: rotate(360deg);}
 }
 
-/*----Alertas----*/
+/*----ALERTAS----*/
 .swal2-title {
   font-family:informacion ;
   font-size: 40px !important;
   color: rgb(0, 0, 0) ;
 }
 
+/* Dark */
 body.dark .swal2-title{
   color: #fff;
 }
 
+/* Dark */
 body.dark .swal2-popup{
   background-color: #292c31;
-
 }
 
 .swal2-html-container{
@@ -1024,9 +987,9 @@ body.dark .swal2-popup{
   color: #725e5e ;
 }
 
+/* Dark */
 body.dark .swal2-html-container{
   color: #b4b6b9;
-
 }
 
 .swal2-confirm {
@@ -1034,13 +997,12 @@ body.dark .swal2-html-container{
   background-color: rgb(209, 190, 190) ;
 }
 
-
+/* Dark */
 body.dark .swal2-confirm{
   background-color: #898282;
-
 }
 
-/*----LIGHT/DARK-----*/
+/*----LIGHT/DARK SWITCH-----*/
 
 .switch{
 	background: #D3D3D3;
@@ -1085,11 +1047,11 @@ body.dark .swal2-confirm{
 }
 
 
-/* SCROLL */
+/* -----SCROLL ------*/
 
 body::-webkit-scrollbar {
-  width: 8px;     /* Tamaño del scroll en vertical */
-  height: 8px;    /* Tamaño del scroll en horizontal */
+  width: 8px;    
+  height: 8px;  
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1103,30 +1065,30 @@ body::-webkit-scrollbar-track {
   border-radius: 4px;
 }
 
-
 body::-webkit-scrollbar-track:hover,
 body::-webkit-scrollbar-track:active {
 background: #e4e4e4;
 }
 
-
-
+/* Dark */
 body.dark::-webkit-scrollbar-thumb {
   background: #505050;
   border-radius: 4px;
 }
 
+/* Dark */
 body.dark::-webkit-scrollbar-thumb:hover {
   background: #696e79;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* Dark */
 body.dark::-webkit-scrollbar-track {
   background: #232529;
   border-radius: 4px;
 }
 
-
+/* Dark */
 body.dark::-webkit-scrollbar-track:hover,
 body.dark::-webkit-scrollbar-track:active {
 background: #292c31;
