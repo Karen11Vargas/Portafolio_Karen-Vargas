@@ -1,15 +1,26 @@
+/*------ FONTS --------- */
 @font-face {
   font-family: FuenteParrafo;
   src: url(../fonts/Please\ write\ me\ a\ song.ttf);
 }
 
+@font-face {
+  font-family: informacion;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
 
-/* BODY */
+/* ------BODY ------*/
 body {
   font-family: FuenteParrafo;
   background-color: rgb(255, 255, 255);
   height: 200vh;
   position: relative;
+  transition: .3s ease all;
+}
+
+/* Dark */
+body.dark {
+  background-color: #232529;
 }
 
 body:before {
@@ -34,29 +45,65 @@ body.offcanvas-menu:before {
   visibility: visible;
 }
 
+/* --------PARRAFOS, TITULOS ----------- */
 
 p {
   color: #a19a9a;
   font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+/* Dark */
+body.dark p{
+  color: #e2e3e7;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   font-family: FuenteParrafo;
+}
+
+.titulo {
+  font-family: FuenteParrafo;
+  text-align: left;
+  color: #725e5e;
+  font-size: 60px;
+  margin-left: 25PX;
+}
+
+/* Dark */
+body.dark .titulo{
+  color: #eeeeee;
+}
+
+.titulo:hover {
+  text-decoration: underline wavy rgb(209, 190, 190) 7%;
+}
+
+.informacion {
+  font-family: informacion;
+  color: #000000;
+  text-align: left;
+  font-size: 22px;
+  margin-left: 35px;
+}
+
+/* Dark */
+body.dark .informacion {
+  color: #e2e3e7;
 
 }
 
-/*LINKS*/
+.informacion1{
+  font-family: informacion;
+  color: #252525;
+  font-size: 20px;
+}
+
+/* Dark */
+body.dark .informacion1 {
+  color: #e2e3e7;
+}
+
+/* ------LINKS ---------*/
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -64,28 +111,75 @@ a {
   font-size: 150%;
 }
 
-a,
-a:hover {
+a,a:hover {
   text-decoration: none !important;
 }
 
-/*FOTO PRINCIPAL*/
+/* ---------SEPARADORES  -----------*/
+
+.verticalLine {
+  border-left: thick solid rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark .verticalLine {
+  border-left: thick solid #696e79
+}
+
+.verticalLine1{
+  border-right: thick solid rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark .verticalLine1 {
+  border-right: thick solid #696e79
+}
+
+
+hr {
+  height: 2px;
+  width: 75%;
+  background-color: rgb(209, 190, 190);
+}
+
+/* Dark */
+body.dark hr {
+  background-color: #696e79; 
+}
+
+
+/*----------FOTO PRINCIPAL INDEX ------------*/
+.heroIndex[data-theme="light"] {
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../images/nubes.jpg')
+}
+
+/* Dark */
+body.dark .heroIndex[data-theme="light"]  {
+  background-image: url('../images/cielo.jpg')
+}
+
+/* ----------FOTO PRINCIPAL OTRAS PAGINAS -----------*/
 .hero {
   height: 40vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .imagen_hero h1 {
-
   font-size: 400%;
   text-align: center;
   padding: 90px;
   color: #725e5e;
 }
 
-
+/* Dark */
+body.dark .imagen_hero h1{
+  color: #fff;
+}
 
 .top-bar {
   padding: .10rem 0;
@@ -96,7 +190,8 @@ a:hover {
   color: #666666;
 }
 
-/*BARRA DE NAVEGACION */
+
+/*--------BARRA DE NAVEGACION----------- */
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
@@ -117,6 +212,7 @@ a:hover {
   right: 0px;
 }
 
+/* -------LOGO------- */
 .site-navbar .site-logo {
   position: absolute;
   font-size: 2rem;
@@ -126,6 +222,12 @@ a:hover {
   margin: 0;
   padding: 0;
   z-index: 6;
+}
+
+/* Dark */
+body.dark .site-logo img{
+  content: url('../images/logodark.png')
+
 }
 
 @media (max-width: 991.98px) {
@@ -144,10 +246,10 @@ a:hover {
 }
 
 .site-navbar .site-navigation .site-menu .active {
-  color: #706155 !important;
+  color:  #000000 !important;
 }
 
-.site-navbar .site-navigation .site-menu a {
+.site-navbar .site-navigation .site-menu a { 
   text-decoration: none !important;
   display: inline-block;
 }
@@ -165,8 +267,14 @@ a:hover {
   text-decoration: none !important;
 }
 
+/* Dark */
+body.dark .site-navbar .site-navigation .site-menu>li>a {
+  color: #eeeeee !important;
+
+}
+
 .site-navbar .site-navigation .site-menu>li>a:hover {
-  color: #e5dcc2;
+  color: #e5dcc2 ;
 }
 
 .site-navbar .site-navigation .site-menu .has-children {
@@ -305,7 +413,7 @@ a:hover {
 }
 
 
-/*MENU EN PANTALLAS PEQUEÑAS*/
+/*-------------MENU EN PANTALLAS PEQUEÑAS -----------*/
 .site-mobile-menu {
   width: 300px;
   position: fixed;
@@ -322,6 +430,11 @@ a:hover {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
+}
+
+/* Dark */
+body.dark .site-mobile-menu {
+  background: #232529;
 }
 
 .offcanvas-menu .site-mobile-menu {
@@ -398,6 +511,11 @@ a:hover {
   display: block;
   position: relative;
   color: #212529;
+}
+
+/* Dark */
+body.dark .site-mobile-menu .site-nav-wrap a{
+  color: #fafafa;
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
@@ -492,7 +610,6 @@ a:hover {
   padding-left: 60px;
 }
 
-
 .sticky-wrapper {
   position: relative;
   z-index: 100;
@@ -503,10 +620,6 @@ a:hover {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-}
-
-.sticky-wrapper .site-navbar {
-  background: #fff;
 }
 
 .sticky-wrapper .site-navbar .site-logo a {
@@ -527,6 +640,13 @@ a:hover {
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
 }
 
+/* Dark */
+body.dark .sticky-wrapper.is-sticky .site-navbar {
+  background: #292c31;
+  -webkit-box-shadow: 4px 0 20px -5px #696e79;
+  box-shadow: 4px 0 20px -5px #696e79;
+}
+
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
   color: #e0d0bb;
 }
@@ -539,41 +659,8 @@ a:hover {
   color: #e0d0bb !important;
 }
 
+
 /*------SOBRE MI -----------------*/
-@font-face {
-  font-family: informacion;
-  src: url(../fonts/Louis\ George\ Cafe.ttf);
-}
-
-.titulo {
-  font-family: FuenteParrafo;
-  text-align: left;
-  color: #725e5e;
-  font-size: 60px;
-  margin-left: 25PX;
-
-}
-
-.titulo:hover {
-  text-decoration: underline wavy rgb(209, 190, 190) 7%;
-}
-
-.informacion {
-  font-family: informacion;
-  color: #000000;
-  text-align: left;
-  font-size: 22px;
-  margin-left: 35px;
-}
-
-.informacion1{
-  font-family: informacion;
-  color: #252525;
-  font-size: 20px;
-
-}
-
-
 .foto {
   float: right;
   width: 200px;
@@ -586,41 +673,28 @@ a:hover {
 .foto:hover {
   background: rgb(209, 190, 190);
   cursor: pointer;
-    transform: scale(1.1);
-
-
+  transform: scale(1.1);
 }
 
-.verticalLine {
-  border-left: thick solid rgb(209, 190, 190);
-}
 
 /*-----CONTACTO ---------*/
-
-.verticalLine1{
-  border-right: thick solid rgb(209, 190, 190);
-
-}
-
-hr {
-  height: 2px;
-  width: 75%;
-  
-  background-color: rgb(209, 190, 190);
-}
-
 .formulario_titulo{
   font-family: FuenteParrafo;
   text-align: right;
   color: #725e5e;
   font-size: 60px;
   margin-right: 36px;
-  
+}
+
+/* Dark */
+body.dark .formulario_titulo {
+  color: #e2e3e7;
 }
 
 .formulario_titulo:hover{
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
+
 
 /*---FORMUALRIO-----*/
 
@@ -632,13 +706,17 @@ form{
   font-size: 30px;
 }
 
+/* Dark */
+body.dark .form_titulo {
+  color: #eeeeee;
+}
 
 .foto_form{
   width: 370px;
   height: 370px;
   float: right;
   margin-right: 36px;
- }
+}
 
 form input, form textarea{
   margin-bottom: 10px;
@@ -649,7 +727,27 @@ form input, form textarea{
   font-size: 1em;
 }
 
+/* Dark */
+body.dark form input {
+  margin-bottom: 10px;
+  width: 515px;
+  font-family: informacion;
+  padding: 10px;
+  background-color: #292c31; 
+  color: #fff;
+  font-size: 1em;
+}
 
+/* Dark */
+body.dark form textarea {
+  margin-bottom: 10px;
+  width: 515px;
+  font-family: informacion;
+  padding: 10px;
+  background-color: #292c31; 
+  color: #fff;
+  font-size: 1em;
+}
 
 form button {
 	display: block;
@@ -660,6 +758,18 @@ form button {
 	color: 	white;
   font-family: informacion;
 }
+
+/* Dark */
+body.dark form button {
+  background-color: #898282; 
+  color: #222; 
+  display: block;
+  padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: em; 
+  font-family: informacion;
+}
+
 form button:hover{
 	background-color:rgb(180, 177, 177);
 }
@@ -668,19 +778,22 @@ form textarea {
    resize:none;
   }
 
-/*FOOTER */
+/*------FOOTER -------*/
 
 .w3hubs-footer {
-  /* color fonfo footer*/
   width: 100%;
   height: auto;
   margin: auto;
   background: #ececec;
   padding: 20px 0px;
-
 }
 
-/*Iconos redes sociales */
+/* Dark */
+body.dark .w3hubs-footer{
+  background: #292c31;
+}
+
+/* -------ICONOS REDES SOCIALES ----- */
 .w3hubs-icon {
   width: 100%;
   height: auto;
@@ -702,6 +815,11 @@ form textarea {
   background: #ffffff;
 }
 
+/* Dark */
+body.dark .w3hubs-icon ul li  {
+  background: #505050;
+}
+
 .w3hubs-icon ul li a {
   text-decoration: none;
   color: #d3cccc;
@@ -721,9 +839,7 @@ form textarea {
   transform: scale(1.4);
 }
 
-/* texto */
-
-
+/* ------TEXTO FOOTER -------*/
 
 .w3hubs-nav {
   width: 100%;
@@ -755,9 +871,16 @@ form textarea {
   letter-spacing: 1px;
 }
 
+/* Dark */
+body.dark .w3hubs-nav ul li a {
+  color: #ece4e4;
+
+}
 .w3hubs-nav ul li a:hover {
   color: #d3cccc;
 }
+
+
 .w3hubs-nav ul li {
   margin: 5px 20px;
 }
@@ -798,25 +921,13 @@ form textarea {
   }
 }
 
-/*ICONOS */
+/*--------ICONOS --------*/
 
-.icon-flor:before {
-  content: "\1f33c";
-}
-.icon-dado:before {
-  content: "\1f3b2";
-}
 .icon-educacion:before {
   content: "\1f393";
 }
 
-.icon-tel:before {
-  content: "\1f4de";
-}
-
-.icon-computador:before {
-  content: "\1f4bb";
-}
+/*-----------ESTILOS CARGA PAGINA ------- */
 
 #contenedor_carga{
   background-color: rgba(241, 241, 241, 0.9);
@@ -846,10 +957,141 @@ form textarea {
   -webkit-animation: girar 1.5s linear infinite;
   -o-animation: girar 1.5s linear infinite;
   animation: girar 1.5s linear infinite;
-
 }
 
 @keyframes girar{
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
 }
+
+/*----ALERTAS----*/
+.swal2-title {
+  font-family:informacion ;
+  font-size: 40px !important;
+  color: rgb(0, 0, 0) ;
+}
+
+/* Dark */
+body.dark .swal2-title{
+  color: #fff;
+}
+
+/* Dark */
+body.dark .swal2-popup{
+  background-color: #292c31;
+}
+
+.swal2-html-container{
+  font-family: informacion;
+  font-size: 20px !important;
+  color: #725e5e ;
+}
+
+/* Dark */
+body.dark .swal2-html-container{
+  color: #b4b6b9;
+}
+
+.swal2-confirm {
+  font-family: informacion;
+  background-color: rgb(209, 190, 190) ;
+}
+
+/* Dark */
+body.dark .swal2-confirm{
+  background-color: #898282;
+}
+
+/*----LIGHT/DARK SWITCH-----*/
+
+.switch{
+	background: #D3D3D3;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #e4e4e4;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius:100px ;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active{
+  background: #A9A9A9;
+}
+
+.switch.active::after{
+  right: 0;
+  left: unset;
+}
+.template{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	background: none;
+	columns: #fff;
+}
+
+
+/* -----SCROLL ------*/
+
+body::-webkit-scrollbar {
+  width: 8px;    
+  height: 8px;  
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d1bebe;
+  border-radius: 4px;
+}
+
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+background: #e4e4e4;
+}
+
+/* Dark */
+body.dark::-webkit-scrollbar-thumb {
+  background: #505050;
+  border-radius: 4px;
+}
+
+/* Dark */
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: #696e79;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark */
+body.dark::-webkit-scrollbar-track {
+  background: #232529;
+  border-radius: 4px;
+}
+
+/* Dark */
+body.dark::-webkit-scrollbar-track:hover,
+body.dark::-webkit-scrollbar-track:active {
+background: #292c31;
+}
+
+

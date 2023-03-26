@@ -1,129 +1,114 @@
-
-
 <!--Template Header-->
-<%- include('templates/header'); %>
-  <!--///////////////    LOADING ///////////////-->
+<%- include('templates/header');%>
+
+  <!--Carga Página-->
   <div id="contenedor_carga">
-    <div id="carga"></div>
+      <div id="carga"></div>
   </div>
-  <body>
-   
-    <!--////////////IMAGEN PRINCIPAL////////////////////-->
-    <div class="hero" style="background-image: url('./../static/images/nubes.jpg');">
-      <div class="imagen_hero">
+
+<body>
+  
+  <!--Imagen Principal-->
+  <div class="heroIndex" data-theme="light">
+    <div class="imagen_hero">
         <h1><span class="color">Bienvenidos</span></h1>
-      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- Sobre mi -->
+  <section class="main container verticalLine">
+    <div class="col-4">
+      <h2 class="titulo"><b>Sobre mi</b></h2>
+    </div>
+    <div class="col-10 ">
+      <p class="informacion "><img class="foto" src="./../static/images/img1.jpg"><br><br>
+        Hola!, soy Karen Vargas una adolescente de 16 años,
+        que le encanta estudiar y aprender cosas nuevas, tengo diferentes gustos como 
+        la programación y la lectura, actualmente estoy estudiando programación 
+        y aparte haciendo diferentes cursos para reforzar y aprender más sobre los 
+        diferentes lenguajes de programación.
+      </p>
+        <br>
+      <p class="informacion"><img class="foto" src="./../static/images/img3.jpg">
+        Entre otros gustos también esta: escuchar música, pasar tiempo <br>
+        con mi familia y mis amigos, viajar, en fin...
+        En general soy una chica muy activa que le gusta lo que está estudiando <br>y
+        trata cada día de ser mejor.
+      </p>
     </div>
     <br><br>
-
-    <!--//////INFORMACION SOBRE MI ////////-->
-    <section class="main container verticalLine">
-      <div class="col-4">
-        <h2 class="titulo "><b>Sobre mi</h2></b>
-      </div>
-      <div class="col-10 ">
-        <p class="informacion "><img class="foto" src="./../static/images/perfill.jpg"><br><br>
-          Hola!, soy Karen Vargas una adolescente de 16 años,
-          que le encanta estudiar y aprender cosas nuevas,
-          soy una persona tranquila que le gusta leer (AMO la literatura)
-          y la programación, me gusta hacer actividad física,
-          ya sea montar cicla, la natación o solamente saltar laso.
-        </p>
-        <p class="informacion"><img class="foto" src="./../static/images/perrfil.jpg">
-          Entre otros gustos también esta: escuchar música, pasar tiempo <br>
-          con mi familia y mis amigos, salir, conocer lugares, viajar, en fin...
-          En general soy una chica muy activa que le gusta lo que está estudiando <br>y
-          trata cada dia de ser mejor.
-        </p>
-      </div>
-      <br><br><br><br>
-    </section>
     <br><br>
-    <hr><br>
+  </section>
+  
+  <br><br>
+  <hr><br>
 
-    <!--Fin de la seccion sobre mi-->
+  <!--Fin de la sección sobre mi-->
 
-    <!--////// EDUCACIÓN ///////-->
-    <div class="container ">
-      <div class="col-12 ">
-        <h2 class="titulo "><b>Educación</h2></b>
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class=" pt-2 pl-4 ml-2">
-              <div class="position-relative mb-4">
-                <h5 class="font-weight-bold mb-1 informacion1"> <span class="icon-educacion"></span>Tecnólogo Análisis y
-                  Desarrollo de Sistemas de Información</h5>
-                <p class="informacion1"><strong>Sena</strong> | <small>feb 2022- presente</small></p>
-              </div>
-              <div class="position-relative mb-4">
-                <h5 class="font-weight-bold mb-1  informacion1"><span class="icon-educacion"></span>Técnico en
-                  programación de Software</h5>
-                <p class="informacion1"><strong>Sena</strong> | <small>2020- 2021</small></p>
-              </div>
-
+  <!--Educación-->
+  <div class="container ">
+    <div class="col-12 ">
+      <h2 class="titulo "><b>Educación</b></h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class=" pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span> Tecnólogo Análisis y
+              Desarrollo de Sistemas de Información</h5>
+              <p class="informacion1"><small>feb 2022- presente</small></p>
+            </div>
+            <div class="position-relative mb-4">
+              <h5 class="font-weight-bold mb-1  informacion1"><span class="icon-educacion"></span> Técnico en
+              programación de Software</h5>
+              <p class="informacion1"><small>2020- 2021</small></p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class=" pt-2 pl-4 ml-2">
-              <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Bachiller Técnico
-                  Industrial</h5>
-                <p class="informacion1"><strong>Instituto Técnico Industrial Piloto</strong> | <small>2021</small></p>
-              </div>
-              <div class="position-relative mb-4">
-                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Fundamentos en
-                  Programación</h5>
-                <p class="informacion1"><strong>Mintic</strong> | <small>2021 (64 horas)</small></p>
-              </div>
+        </div>
+        <div class="col-lg-6">
+          <div class=" pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span> Bachiller Técnico
+                Industrial</h5>
+              <p class="informacion1"><small>2021</small></p>
+            </div>
+            <div class="position-relative mb-4">
+              <h5 class="font-weight-bold mb-1 informacion1"><span class="icon-educacion"></span>Cursos Afines</h5>
+              <p class="informacion1">
+                <a href="https://drive.google.com/drive/folders/1NZTBaMAIY1jS_ClMuAbPcMXbutsyOfZo?usp=sharing" style="text-decoration:none; color: #ada8a8; font-size: 15px;" target="_black">Ver Certificados</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <br>
+  <hr><br>
 
-    <br>
-    <hr><br>
+  <!--Fin de la sección educación-->
 
-    <!--Fin de la seccion educacion-->
-
-    <!--//////CONTACTO////////////////-->
-
-    <div class="container verticalLine1">
-      <div class="col-12">
-        <h1 class="formulario_titulo"><b>Contacto</b></h1>
-      </div>
-      <img class="foto_form" src="./../static/images/contacto2.png">
-      <div class="col-8">
-        <form action="https://formspree.io/f/mdobqgnb" method="POST">
-          <label class="form_titulo"><b>Correo Electrónico</b> </label>
-          <input type="email" name="email" placeholder="Escribe tu correo" required><br>
-          <label class="form_titulo"><b>Mensaje</b></label><br>
-          <textarea name="message" placeholder="Deja tu mensaje aquí" required></textarea><br>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+  <!--Contacto-->
+  <div class="container verticalLine1">
+    <div class="col-12">
+      <h1 class="formulario_titulo"><b>Contacto</b></h1>
     </div>
-    <br><br>
-
-    <!--///////   LOADING     //////////-->
-
-    <script>
-      window.onload=function(){
-        var contenedor = document.getElementById('contenedor_carga');
+    <img class="foto_form" src="./../static/images/contacto2.png" alt="">
+    <div class="col-8">
+      <form action="/contact/send-email" method="POST">
+        <label class="form_titulo"><b>Correo Electrónico</b> </label>
+        <input type="email" name="email" id="correo" placeholder="Escribe tu correo"><br>
+        <label class="form_titulo"><b>Mensaje</b></label><br>
+        <textarea name="message" id="mensaje" placeholder="Deja tu mensaje aquí"></textarea><br>
+        <button type="submit" onclick="return validarCorreo()">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <br><br>
   
-        contenedor.style.visibility='hidden';
-        contenedor.style.opacity='0';
-      }
-    </script>
-   
+  <!--Fin de la sección contacto-->
 
-    <!--Template Footer-->
-    <%- include('templates/footer'); %>
-
-    <!--///////   LOADING     //////////-->
-
-  </body>
-
-  </html>
+  <!--Template Footer-->
+  <%- include('templates/footer'); %>
+    
+</body>

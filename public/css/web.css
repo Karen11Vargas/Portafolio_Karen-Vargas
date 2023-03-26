@@ -1,12 +1,21 @@
-/* ----- TITULOS Y PARRAFOS */
+/* ----- FONTS ------*/
+@font-face {
+  font-family: portafolio;
+  src: url(../fonts/Cherry\ Monospace-Light.ttf);
+}
 
-
+/* ----- TITULOS Y PARRAFOS ----*/
 .titulo1 {
   font-family: FuenteParrafo;
   color: #725e5e ;
   font-size: 50px;
   position: left;
   margin-left: 20px;
+}
+
+/* Dark */
+body.dark .titulo1{
+  color: #eeeeee;
 }
 
 .titulo2 {
@@ -16,6 +25,12 @@
   text-align: center;
   margin-right: 30px;
 }
+
+/* Dark */
+body.dark .titulo2{
+  color: #eeeeee;
+}
+
 .informacion {
   font-family: informacion;
   color: #000000;
@@ -36,8 +51,169 @@
 .titulo2:hover{
   text-decoration: underline wavy rgb(209, 190, 190) 7%;
 }
-.palabra 
-{ font-weight: bold; }
+.palabra {
+  font-weight: bold;
+}
+
+.portafolioo{
+  font-family: portafolio;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Dark */
+body.dark .portafolioo{
+  color: #000000;
+}
+
+/* -------- ESTILOS HABILIDADES-------*/
+.progress-bar {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+/* Dark */
+body.dark .progress-bar{
+  background-color: #292c31;
+}
+.percentage1 {
+  display: block;
+  height: 100%;
+  background-color: #fa7e2c;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage2 {
+  display: block;
+  height: 100%;
+  background-color: #1968fc;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage3 {
+  display: block;
+  height: 100%;
+  background-color: #806fa1;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage4 {
+  display: block;
+  height: 100%;
+  background-color: #fffb1c;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage5 {
+  display: block;
+  height: 100%;
+  background-color: #793cce;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage6 {
+  display: block;
+  height: 100%;
+  background-color: #4ec6eb;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage7 {
+  display: block;
+  height: 100%;
+  background-color: #e04b81;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage8 {
+  display: block;
+  height: 100%;
+  background-color: #eeb333;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage9 {
+  display: block;
+  height: 100%;
+  background-color: #29aa24;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage10 {
+  display: block;
+  height: 100%;
+  background-color: #71d230;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.html {
+  width: 75%;
+}
+
+.css {
+  width: 60%;
+}
+
+.php {
+  width: 30%;
+}
+
+.javascript {
+  width: 40%;
+}
+
+.boostrap {
+  width: 60%;
+}
+
+.java {
+  width: 50%;
+}
+
+.sql {
+  width: 55%;
+}
+
+.git {
+  width: 70%;
+}
+
+
+.node {
+  width: 25%;
+}
+
+.mongo {
+  width: 20%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+.skills {
+  margin-left: 8px;
+}
 
 /* ------ ESTILOS SECCION PORTAFOLIO  ------ */
 .portfolio-item .portfolio-btn {
@@ -77,148 +253,11 @@
   margin-right: 10px;
 
   font-family:informacion;
-  }
-
-  .learn-more-btn:hover{
-     background: rgb(224, 209, 209) ;
-      color: #fff; }
-
-     @font-face {
-      font-family: portafolio;
-      src: url(../fonts/Cherry\ Monospace-Light.ttf);
-    }
-
-    .portafolioo{
-      font-family: portafolio;
-      color: #000000;
-      text-align: center;
-      font-weight: bold;
-      font-size: 15px;
-    }
-
-
-
-/* -------- ESTILOS HABILIDADES-------*/
-.progress-bar {
-  display: flex;
-  height: 1rem;
-  overflow: hidden;
-  line-height: 0;
-  font-size: 0.75rem;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-
-
 }
 
-.percentage1 {
-  display: block;
-  height: 100%;
-  background-color: #fa7e2c;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
+.learn-more-btn:hover{
+  background: rgb(224, 209, 209) ;
+  color: #fff; 
 }
-
-.percentage2 {
-  display: block;
-  height: 100%;
-  background-color: #1968fc;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage3 {
-  display: block;
-  height: 100%;
-  background-color: #806fa1;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage4 {
-  display: block;
-  height: 100%;
-  background-color: #fffb1c;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage5 {
-  display: block;
-  height: 100%;
-  background-color: #4ec6eb;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage6 {
-  display: block;
-  height: 100%;
-  background-color: #e04b81;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage7 {
-  display: block;
-  height: 100%;
-  background-color: #eeb333;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-.percentage8 {
-  display: block;
-  height: 100%;
-  background-color: #29aa24;
-  border-radius: 5px;
-  animation: progress 1500ms ease-in 1;
-}
-
-/* Assigning width of each languages*/
-.html {
-  width: 95%;
-}
-
-.css {
-  width: 70%;
-}
-
-.php {
-  width: 20%;
-}
-
-.javascript {
-  width: 15%;
-}
-
-.java {
-  width: 55%;
-}
-
-.sql {
-  width: 65%;
-}
-
-.git {
-  width: 80%;
-}
-
-
-.node {
-  width: 20%;
-}
-
-@keyframes progress {
-  from {
-    width: 0;
-  }
-}
-
-
-.skills {
-  margin-left: 8px;
-}
-
 
     
