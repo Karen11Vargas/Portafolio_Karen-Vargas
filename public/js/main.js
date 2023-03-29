@@ -113,28 +113,54 @@ function validarCorreo() {
 	}
 }
 
-//Modo Oscuro
-const btnSwitch = document.querySelector('#switch');
-btnSwitch.addEventListener('click', () =>{
-	document.body.classList.toggle('dark');
-	btnSwitch.classList.toggle('active');
+// //Modo Oscuro
+// const btnSwitch = document.querySelector('#switch');
+// btnSwitch.addEventListener('click', () =>{
+// 	document.body.classList.toggle('dark');
+// 	btnSwitch.classList.toggle('active');
 
-	//Guadar el modo en localstorage
-	if(document.body.classList.contains('dark')){
-		localStorage.setItem('dark-mode', 'true')
-	}else{
-		localStorage.setItem('dark-mode', 'false')
-	}
-});
+// 	//Guadar el modo en localstorage
+// 	if(document.body.classList.contains('dark')){
+// 		localStorage.setItem('dark-mode', 'true')
+// 	}else{
+// 		localStorage.setItem('dark-mode', 'false')
+// 	}
+// });
+
+// //Obetener el modo actual
+// if (localStorage.getItem('dark-mode')=='true') {
+// 	document.body.classList.add('dark');
+// 	btnSwitch.classList.add('active');
+// }else{
+// 	document.body.classList.remove('dark');
+// 	btnSwitch.classList.remove('active');
+// }
+
+const btnSwitch = document.querySelector('#switch');
+btnSwitch.addEventListener('click', toggleDarkMode);
+btnSwitch.addEventListener('touchstart', toggleDarkMode);
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+  btnSwitch.classList.toggle('active');
+
+  //Guadar el modo en localstorage
+  if (document.body.classList.contains('dark')) {
+    localStorage.setItem('dark-mode', 'true');
+  } else {
+    localStorage.setItem('dark-mode', 'false');
+  }
+}
 
 //Obetener el modo actual
-if (localStorage.getItem('dark-mode')=='true') {
-	document.body.classList.add('dark');
-	btnSwitch.classList.add('active');
-}else{
-	document.body.classList.remove('dark');
-	btnSwitch.classList.remove('active');
+if (localStorage.getItem('dark-mode') == 'true') {
+  document.body.classList.add('dark');
+  btnSwitch.classList.add('active');
+} else {
+  document.body.classList.remove('dark');
+  btnSwitch.classList.remove('active');
 }
+
 
 //Bloquear Clic derecho
 document.addEventListener('contextmenu', event => {
