@@ -437,6 +437,8 @@ body.dark .site-mobile-menu {
   background: #232529;
 }
 
+
+
 .offcanvas-menu .site-mobile-menu {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
@@ -778,6 +780,7 @@ form textarea {
    resize:none;
   }
 
+  
 /*------FOOTER -------*/
 
 .w3hubs-footer {
